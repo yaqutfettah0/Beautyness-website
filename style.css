@@ -5,12 +5,22 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+@font-face {
+    font-family: opensans;
+    src: url(./fonts/Merriweather/Merriweather-Italic.ttf);
+}
+body {
+   font-family: opensans;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 94vw;
     margin: 30px auto 30px auto;
+}
+.nav-logo img {
+    width: 191px;
 }
 .nav {
     display: flex;
@@ -81,5 +91,451 @@
 }
 .nav-a a:hover::after {
     width: 80%;
+
+}
+.bars {
+    display: none;
+    cursor: pointer;
+}
+
+.head-main {
+    background: url(./image/Background.png) no-repeat center;
+    background-size: cover;
+    height: 87vh;
+
+    .head-mains {
+        width: 60vw;
+        margin: auto;
+        padding-top: 120px;
+    }
+
+
+    .head-text1 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            width: 1vw;
+        }
+
+        p{
+            color: rgba(92, 134, 146, 1);
+            line-height: 23px;
+            font-size: 19px;
+        }
+    }
+
+    .head-text2 {
+        width: 29vw;
+        margin-bottom: 20px;
+
+        h1 {
+            color: rgba(20, 20, 20, 1);
+            font-size: 55px;
+        }
+    }
+
+    .head-text3 {
+        width: 29vw;
+        
+        p {
+            color: rgba(85, 85, 85, 1);
+            font-size: 19px;
+        }
+    }
+    
+    .head-button {
+        margin-top: 30px;
+
+        a {
+            border: 1px solid rgba(92, 134, 146, 1);
+            background-color: rgba(92, 134, 146, 1);
+            transition: 0.5s all ease;
+            color: white;
+            padding: 10px 15px;
+        }
+
+        a:hover {
+            background-color: black;
+        }
+    }
+}
+.main1-boxs {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 120px auto;
+    gap: 15px;
+    width: 75vw;
+
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+        color: rgba(20, 20, 20, 1);
+    }
+
+    p {
+        font-size: 15px;
+        color: rgba(85, 85, 85, 1);
+        width: 315px;
+    }
+
+    a {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(20, 20, 20, 1);
+        border: 2px solid rgba(92, 134, 146, 1);
+        transition: 0.5s all ease;
+        padding: 8px 15px;
+    }
+    a:hover {
+        color: white;
+        background-color: rgba(92, 134, 146, 1);
+    }
+
+    .main1-box1 {
+        display: grid;
+        gap: 15px;
+    }
+
+    .main1-box2 {
+        display: grid;
+        gap: 15px;
+    }
+
+    .main1-box3 {
+        display: grid;
+        gap: 15px;
+    }
+
+    
+}
+
+
+.main2 {
+    background-color: rgba(235, 243, 245, 1);
+    padding-top: 80px;
+}
+
+
+.main2-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+    .main2-boxs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        
+
+
+        .main2-box1 {
+
+
+            img {
+                width: 3vw;
+                margin-bottom: 8px;
+                margin-top: 15px;
+            }
+        }
+    
+        .main2-box2 {
+
+            img {
+                width: 4vw;
+                margin-bottom: 8px;
+                margin-top: 15px;
+            }
+        }
+
+        .main2-box3 {
+
+            img {
+                width: 4vw;
+                margin-bottom: 8px;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .main2-text {
+        width: 28vw;
+
+        h5 {
+            font-size: 15px;
+            color: rgba(92, 134, 146, 1);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: rgba(20, 20, 20, 1);
+            font-size: 43px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: rgba(85, 85, 85, 1);
+            margin-bottom: 26px;
+        }
+    }
+
+    .main2-img img {
+        width: 30vw;
+    }
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:576px) {
+
+    .nav {
+
+        .tel {
+            display: none;
+        }
+       }
+
+       .nav1 {
+
+        .nav-a {
+            display: none;
+           }
+    
+           .nav-button {
+            display: none;
+           }
+      }
+      .bars {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 50px;
+        }
+      }
+      .head-main {
+        background: rgb(108, 146, 155);
+
+        
+        .head-mains {
+            width: 60vw;
+            margin: auto;
+            padding-top: 150px;
+        }
+        .head-text1 {
+            p {
+                color: rgb(69, 98, 106);
+                font-size: 14px;
+               
+            }
+        }
+        .head-text3 {
+            width: 50vw;
+            p {
+                font-size: 15px;
+                color: rgb(69, 98, 106);
+            }
+        }
+        .head-text2 {
+            width: 60vw;
+    
+            h1 {
+                color: white;
+                font-size: 30px;
+    
+            }
+        }
+    }
+
+    .main1-boxs {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-content: center;
+        gap: 40px;
+    }
+
+    .main2-div {
+        display: flex;
+        gap: 50px;
+
+        .main2-text {
+            width: 40vw;
+            
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+
+        .main2-boxs {
+            display: flex;
+            gap: 30px;
+        }
+    }
+   
+}
+
+@media screen and (min-width:577px) and (max-width:798px) {
+
+    .nav {
+
+        .tel {
+            display: none;
+        }
+       }
+
+      .nav1 {
+
+        .nav-a {
+            display: none;
+           }
+    
+           .nav-button {
+            display: none;
+           }
+      }
+
+      .bars {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 50px;
+        }
+      }
+      .head-main {
+        background: rgb(108, 146, 155);
+        
+        .head-mains {
+            width: 60vw;
+            margin: auto;
+            padding-top: 150px;
+        }
+
+        .head-text1 {
+            p {
+                color: rgba(69, 98, 106);
+                font-size: 14px;
+            }
+        }
+        .head-text3 {
+            width: 50vw;
+            p {
+                font-size: 15px;
+                color: rgba(69, 98, 106);
+            }
+        }
+        .head-text2 {
+            width: 60vw;
+    
+            h1 {
+                color: white;
+                font-size: 37px;
+    
+            }
+        }
+    }
+
+    .main1-boxs {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .main2-div {
+        display: flex;
+        gap: 70px;
+
+        .main2-text {
+            width: 31vw;
+            
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+
+        .main2-boxs {
+            display: flex;
+            gap: 35px;
+        }
+    }
+
+}
+
+@media screen and (min-width:799px) and (max-width:992px) {
+
+    .nav {
+
+        .tel {
+            display: none;
+        }
+       }
+       .head-main {
+        .head-text2 {
+            width: 29vw;
+    
+            h1 {
+                font-size: 35px;
+    
+            }
+        }
+    }
+
+    .main1-boxs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+   .nav {
+
+    .tel {
+        display: none;
+    }
+   }
+   .head-main {
+    .head-text2 {
+        width: 26vw;
+
+        h1 {
+            font-size: 40px;
+
+        }
+    }
+}
+
+.main1-boxs {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+@media screen and (min-width:1201px) and (max-width:1400px) {
+    .head-main {
+        .head-text2 {
+            width: 26vw;
+
+            h1 {
+                font-size: 42px;
+
+            }
+        }
+    }
 
 }
