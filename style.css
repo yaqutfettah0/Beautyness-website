@@ -498,6 +498,27 @@ body {
         grid-template-columns: repeat(2,1fr);
     }
 
+    .main2-div {
+        display: flex;
+        gap: 80px;
+
+        .main2-text {
+            width: 31vw;
+            
+            h2 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .main2-boxs {
+            display: flex;
+            gap: 60px;
+        }
+    }
 
 }
 
